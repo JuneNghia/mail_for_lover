@@ -276,18 +276,19 @@ body{
 
 .boxCouple {
     position: absolute;
-    bottom: 15%;
-    transform: translateX(700px);
-    z-index: 2;
-    
+    bottom: 10%;
+    transform: translateX(1200px);
+    z-index: 10;
+    animation: couple 4s 1s forwards
 }
 .boxCar img, .boxCouple img{
     width: 350px;
 }
 
 .boxCouple img {
-    width: 250px;
+    width:450px;
 }
+
 @keyframes car{
     0%{
         transform: translateX(-400px);
@@ -296,6 +297,16 @@ body{
         transform: translateX(150px);
     }
 }
+
+@keyframes couple{
+    0%{
+        transform: translateX(1200px);
+    }
+    50%,100%{
+        transform: translateX(400px);
+    }
+}
+
 .boxHeart{
     position: relative;
     width: 100%;
